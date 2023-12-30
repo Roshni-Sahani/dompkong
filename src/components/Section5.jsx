@@ -20,16 +20,25 @@ const NewSection = () => {
             <img className="pe-5 w-100" src={blackgorllia} alt="big" />
           </div>
           <div>
-            <div className="d-flex align-items-center justify-content-center">
-              <img
-                className=" object-fit-contain d_none d-lg-block"
-                src={line3}
-                alt="3"
-              />
-              <div className="circle d-flex align-items-center justify-content-center ms-lg-3">
+            <div className="d-flex align-items-center justify-content-center lines">
+              <span className="d_none d-lg-block">
+                <svg
+                  width="179"
+                  height="12"
+                  viewBox="0 0 179 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.666667 6C0.666666 8.94552 3.05448 11.3333 6 11.3333C8.94552 11.3333 11.3333 8.94552 11.3333 6C11.3333 3.05448 8.94552 0.666667 6 0.666667C3.05448 0.666666 0.666667 3.05448 0.666667 6ZM167.667 6.00001C167.667 8.94553 170.054 11.3333 173 11.3333C175.946 11.3333 178.333 8.94553 178.333 6.00002C178.333 3.0545 175.946 0.666681 173 0.666681C170.054 0.666681 167.667 3.0545 167.667 6.00001ZM6 7L173 7.00001L173 5.00001L6 5L6 7Z"
+                    fill="white"
+                  />
+                </svg>
+              </span>
+              <div className="circle d-flex align-items-center justify-content-lg-center ms-lg-3">
                 <p className="ff-montserrat fw-900 lh-109 fs-s mb-0">20%</p>
               </div>
-              <div className="d-flex flex-column justify-content-center ps-3 ps-lg-0">
+              <div className="d-flex flex-column justify-content-lg-center ps-3 ps-lg-0">
                 <p className="text-white fs-s fw-normal lh-109 ff-SansUber ps-lg-5 mt-3 mt-lg-0">
                   Phase 1
                 </p>
@@ -39,7 +48,7 @@ const NewSection = () => {
                 </p>
               </div>
             </div>
-            <div className="d-flex xxl-pl-79 pl-0 align-items-center justify-content-center lines">
+            <div className="d-flex xxl-pl-79 pl-0 align-items-center justify-content-lg-center lines">
               <span className="d_none d-lg-block">
                 <svg
                   width="109"
@@ -67,7 +76,7 @@ const NewSection = () => {
                 </p>
               </div>
             </div>
-            <div className="d-flex xxl-pl-120 pl-0 align-items-center justify-content-center lines">
+            <div className="d-flex xxl-pl-120 pl-0 align-items-center justify-content-lg-center lines">
               <sapn className="d_none d-lg-block">
                 <svg
                   width="123"
@@ -95,7 +104,7 @@ const NewSection = () => {
                 </p>
               </div>
             </div>
-            <div className="d-flex xxl-pl-79 pl-0 align-items-center justify-content-center lines">
+            <div className="d-flex xxl-pl-79 pl-0 align-items-center justify-content-lg-center lines">
               <sapn className="d_none d-lg-block">
                 <svg
                   width="97"
@@ -123,7 +132,7 @@ const NewSection = () => {
                 </p>
               </div>
             </div>
-            <div className="d-flex align-items-center justify-content-center lines">
+            <div className="d-flex align-items-center justify-content-lg-center lines">
               <sapn className=" d_none d-lg-block white-line5">
                 <svg
                   width="133"

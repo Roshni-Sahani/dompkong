@@ -1,10 +1,7 @@
 import React from "react";
 import { Card, Col, Row } from "react-bootstrap";
-import doc1 from "../assests/images/doc1.svg";
-import doc2 from "../assests/images/doc2.svg";
-import doc3 from "../assests/images/doc3.svg";
 
-const Utilitiescard = [
+const gradientcard = [
   {
     svg: (
       <>
@@ -116,22 +113,22 @@ const Utilitiescard = [
   },
 ];
 const Cards = () => {
-  const list = Utilitiescard.map((Utilitiescard) => (
+  const list = gradientcard.map((gradientcard) => (
     <Col
       lg={4}
       className="mt-3 position-relative justify-content-center d-flex"
     >
-      <Card className="Utilitiescard">
+      <Card className="gradientcard">
         <div className="text-center pt-4">
           {/* <img src={Utilitiescard.svg} alt="img-1" /> */}
-          <span>{Utilitiescard.svg}</span>
+          <span>{gradientcard.svg}</span>
         </div>
         <Card.Body>
           <p className="ff-montserrat fw-semibold fs-md lh-109 text-white text-center pt-1">
-            {Utilitiescard.heading}
+            {gradientcard.heading}
           </p>
           <Card.Text className="ff-montserrat fw-normal fs-xs lh-160 text-white text-center pt-1 max-w-350 mx-auto">
-            {Utilitiescard.para}
+            {gradientcard.para}
           </Card.Text>
         </Card.Body>
       </Card>

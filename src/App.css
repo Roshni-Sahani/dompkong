@@ -73,7 +73,7 @@ animation-direction: alter nate, rever se, normal;
   z-index: -1;
 }
 /* =============section2========= */
-.Utilitiescard {
+.gradientcard {
   border-radius: 16px !important;
   border: 1px solid rgba(255, 255, 255, 0.2) !important;
   background: rgba(255, 255, 255, 0.1) !important;
@@ -82,15 +82,15 @@ animation-direction: alter nate, rever se, normal;
   height: 289px !important;
   transition: 800ms all linear;
 }
-.Utilitiescard:hover {
+.gradientcard:hover {
   background: var(--light-yellow) !important;
   box-shadow: 0px 14px 56px 0px rgba(253, 218, 96, 0.5);
   transform: translateY(-10%);
 }
-.Utilitiescard:hover p {
+.gradientcard:hover p {
   color: black !important;
 }
-.Utilitiescard:hover svg path {
+.gradientcard:hover svg path {
   stroke: black !important; 
 }
 
