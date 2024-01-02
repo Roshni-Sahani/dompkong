@@ -18,6 +18,58 @@
 .d_none {
   display: none;
 }
+.headimg2 {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  z-index: -1;
+  /* animation: monkey2 5s forwards; */
+}
+.headimg3 {
+  /* animation: monkey3 5s forwards; */
+  position: absolute;
+  bottom: 0;
+  right: 0%;
+  z-index: -1;
+}
+
+@keyframes monkey3 {
+  0% {
+    right: -100%;
+  }
+
+  100% {
+    right: 0;
+  }
+}
+@keyframes monkey2 {
+  0% {
+    right: -100%;
+  }
+
+  100% {
+    right: 10%;
+  }
+}
+
+
+.headimg1 {
+  position: absolute;
+  bottom: 0;
+  right: 30%;
+  z-index: -1;
+  /* animation: monkey1 5s forwards; */
+}
+
+@keyframes monkey1 {
+  0% {
+    right: -100%;
+  }
+
+  100% {
+    right: -9%;
+  }
+}
 
 .common-btn:hover {
   border: 2px solid var(--darkyellow);
@@ -35,6 +87,12 @@
   position: absolute;
   top: 2%;
   right: 10%;
+}
+.jhlar-pos{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
 }
 /* ===============section1========== */
 /* .aiimg {
@@ -54,7 +112,7 @@ animation-direction: alter nate, rever se, normal;
 
 } */
 .boder-bottom {
-  border-bottom: 3px solid #fdda60 !important;
+  border-bottom: 5px solid #fdda60 !important;
 }
 .mw-522 {
   max-width: 522px;
@@ -346,11 +404,21 @@ animation-direction: alter nate, rever se, normal;
   --bs-accordion-bg: none !important;
   background: transparent !important;
 }
-
+.accordion-item::before {
+  content: '';
+  position: absolute;
+  bottom: 0% !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 1px !important;
+  background-color: var(--light-yellow) !important;
+  box-shadow: 0px 0px 38px 1px rgba(253, 218, 96, 1) !important;
+}
 .accordion-item {
   border: none !important;
   border-style: solid;
-  border-bottom: 1px solid #fdda60 !important;
+  position: relative;
+  /* border-bottom: 1px solid #fdda60 !important; */
 }
 
 .accordion-button:focus {
@@ -563,7 +631,7 @@ animation-direction: alter nate, rever se, normal;
 
   .xxl-pl-79 {
     padding-left: 79px !important;
-    padding-top: 35px !important;
+    padding-top: 18px !important;
   }
 
   .xxl-pl-120 {
@@ -673,4 +741,7 @@ animation-direction: alter nate, rever se, normal;
     top: 76%;
     right: 0%;
   }
+}
+#color-red{
+color: red !important;
 }

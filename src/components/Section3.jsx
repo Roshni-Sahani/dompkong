@@ -48,8 +48,8 @@ const Section3 = () => {
   return (
    
     <div>
-            <section className='light-black pt-5 m t-5 position-relative overflow-hidden pb-370 z-1 d-none d-lg-block'>
-                <div className='d-flex align-items-center justify-content-center flex-column pt-5' >
+            <section className='light-black pt-lg-5 pt-3 m t-5 position-relative overflow-hidden pb-370 z-1 d-none d-lg-block'>
+                <div className='d-flex align-items-center justify-content-center flex-column pt-lg-5' >
                     <h3 className='fs-xl fw-normal lh-108 text-white ff-SansUber'>THE KONGS</h3>
                     <img src={bigimg} alt="bigkongs" className='pt-3 d-none d-lg-block' />
                 </div>

@@ -11,7 +11,7 @@ const NewSection = () => {
           Roadmap
         </p>
         <div className="d-flex flex-col xxl-row">
-          <div className="position-relative d-flex align-items-center justify-content-center">
+          <div className="position-relative d-flex align-items-center justify-content-lg-center">
             <img
               className="circle-position d_none xxl-block"
               src={roatateline}

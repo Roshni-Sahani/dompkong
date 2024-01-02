@@ -4,8 +4,8 @@ import { Col, Container, Row } from "react-bootstrap";
 const Section1 = () => {
   return (
     <>
-      <div className="light-black py-5 postion-relative z-1">
-        <Container className="py-5">
+      <div className="light-black py-lg-5 pt-3 postion-relative z-1">
+        <Container className="py-lg-5">
           <Row>
             <Col
               lg={6}

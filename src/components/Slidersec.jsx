@@ -65,7 +65,7 @@ const Slidersec = () => {
     };
     return (
         <>
-            <section className='py-5 light-black'>
+            <section className='py-lg-5 py-2 light-black'>
                 <div className='container py-5'>
                     <div className='d-flex justify-content-center align-items-center'>
                         <h2 className='ff-SansUber text-white fs-xl fw-normal'>Partners</h2>

@@ -4,8 +4,8 @@ import footlogo from '../assests/images/footlogo.png'
 const Loader = () => {
   const preloader = document.getElementById("preloader");
   setTimeout(() => {
-    document.getElementById("preloader").classList.add("d_none");
-    document.body.classList.remove("overflow_hidden");
+    document.getElementById("preloader").classList.add("d-none");
+    document.body.classList.remove("overflow_hidden");  
   }, 3000);
   return (
     <div>

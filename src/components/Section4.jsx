@@ -15,7 +15,7 @@ const Section4 = () => {
   }
   return (
     <>
-      <div className="bg-img position-relative overflow-hidden">
+      <div className="bg-img position-relative overflow-hidden py-5">
         <Container>
           <Row className="row align-items-center">
             <Col lg={6} className="text-center text-lg-center">

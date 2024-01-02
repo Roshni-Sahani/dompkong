@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import Headerimg from "../assests/images/Headerimg.png";
+import headimg1 from '../assests/images/headimg1.png'
+import headimg2 from "../assests/images/headimg2.png";
+import headimg3 from "../assests/images/headimg3.png";
 import logoimg from "../assests/images/logoimg.png";
-import { Container } from "react-bootstrap";
+import { Container, Form } from "react-bootstrap"; 
 
 const Header = () => {
+  // const [first, setfirst] = useState(0);
+
+  // function incrase() {
+  //   setfirst(first + 1);
+  // }
+
   return (
     <>
-      <section className="header-img  min-vh-100 postion-relative">
+      <section className="header-img  min-vh-100 postion-relative z-1">
         <Container>
           <div className="d-flex justify-content-center align-items-center flex-column gap-4">
             <img src={logoimg} alt="logo" />
@@ -127,19 +136,32 @@ const Header = () => {
               </a>
             </div>
           </div>
-          <p className="text-center fs-xl fw-normal lh-109 max-widt h-539 mx-auto text-white ff-SansUber pt-5">
-            WELCOME <br />
-            TO{" "}
+          <p className="text-center fs-xl fw-normal lh-109 max-widt h-539 mx-auto text-white ff-SansUber pt-3">
+            WELCOME <br /> TO{" "}
             <span className="darkyellow ff-SansUber boder-bottom">
+              {" "}
               DomPKong
             </span>
+            {/* {first <= 9 ? "0" : ""} */}
+            {/* {first} */}{" "}
+            {/* <span className="darkyellow ff-SansUber boder-bottom">
+              DomPKong
+            </span> */}
+            {/* <p className={`${first === 9 ? "bg-danger" : ""}`}>
+              {first === 9
+                ? "you have reached the maximum limit"
+                : "you can buy at least 9"}
+            </p> */}
           </p>
           <p className="text-white ff-montserrat fs-xs fw-normal text-center mx-auto mw-565 lh-160">
             Turpis et tortor vel pharetra nibh. Mauris nisl sit vitae viverra
             amet et. Erat nam molestie. Vita
           </p>
-          <div className="d-flex gap-4 justify-content-center mt-5">
-            <button className="common-btn fs-xs lh-109 fw-normal text-black ff-SansUber">
+          <div className="d-flex gap-4 justify-content-center mt-3">
+            <button
+              // onClick={incrase}
+              className="common-btn fs-xs lh-109 fw-normal text-black ff-SansUber"
+            >
               WHITEPAPER
             </button>
             <button className="common-btn fs-xs lh-109 fw-normal text-black ff-SansUber">
@@ -150,6 +172,20 @@ const Header = () => {
             </button>
           </div>
         </Container>
+        {/* <div className="jhlar-pos">
+          <img src={jhlar} alt="jhlar"/>
+        </div> */}
+        <div className="d-none d-sm-block">
+          <div className="headimg1">
+            <img className="w-100" src={headimg1} alt="headimg1" />
+          </div>
+          <div className="headimg2">
+            <img className="w-100" src={headimg2} alt="headimg1" />
+          </div>
+          <div className="headimg3">
+            <img className="w-100" src={headimg3} alt="headimg1" />
+          </div>
+        </div>
       </section>
     </>
   );

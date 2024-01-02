@@ -9,10 +9,10 @@ const Section6 = () => {
     <>
       <div className="light-black py-5 overflow-hidden ">
         <Container className="py-5">
-          <h2 className="ff-SansUber fw-normal fs-xl lh-109 text-white text-center text-nowrap">
+          <h2 className="ff-SansUber fw-normal fs-xl lh-109  text-center text-nowrap text-white">
             Meet The Team
           </h2>
-          <div className="position-relative ">
+          <div className="position-relative">
             <Row className="yellowline pt-5">
               <Col lg={6} className="pt-4 text-center text-lg-start">
                 <p className="ff-Montserrat fw-bold lh-109 text-white fs-md">
@@ -21,7 +21,7 @@ const Section6 = () => {
                 <p className="ff-Montserrat fw-normal lh-109 text-white fs-s">
                   Carter Septimus
                 </p>
-                  <img src={men1} alt="team" className="men-img" />
+                <img src={men1} alt="team" className="men-img" />
               </Col>
               <Col className="pt-4 text-center text-lg-start">
                 <p className="ff-montserrat fw-semibold lh-109 text-white fs-md text-center text-lg-start">

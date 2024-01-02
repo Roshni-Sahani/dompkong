@@ -6,7 +6,7 @@ const Section2 = () => {
   return (
     <>
       <div className="light-black py-5">
-              <Container className="py-4">
+              <Container className="py-lg-4">
                   <p className="text-white ff-SansUber fs-xl lh-109 text-center fw-normal">Utilities</p>
           <Cards />
         </Container>
