@@ -5,14 +5,17 @@ import bottleimg from "../assests/images/bottleimg.png";
 import {Container, Row ,Col } from "react-bootstrap";
 
 const Section4 = () => {
-  let [count, setCount] = useState(1);
-
-  function incrementCount() {
-    setCount((prevCount) => (prevCount < 100 ? prevCount + 1 : prevCount));
-  }
-  function decrementCount() {
-    setCount((prevCount) => (prevCount > 1 ? prevCount - 1 : 1));
-  }
+ const [count, setCount] = useState(1);
+ const decrement = () => {
+   if (count >= 2) {
+     setCount(count - 1);
+   }
+ };
+ if (count == 10) {
+   document.getElementById("addzero").style.display = "none";
+ } else if (count == 9) {
+   document.getElementById("addzero").style.display = "block";
+ }
   return (
     <>
       <div className="bg-img position-relative overflow-hidden py-5">
@@ -26,14 +29,14 @@ const Section4 = () => {
                 Mint NFT
               </p>
               <Row>
-               <Col className="col-6">
+                <Col className="col-6">
                   <p className="ff-montserrat fw-900 text-white fs-lg lh-109">
                     9999{" "}
                   </p>
                   <p className="fs-xs ff-montserrat fw-normal text-white lh-109">
                     of 10,000 minted
                   </p>
-              </Col>
+                </Col>
                 <Col className="col-6">
                   <p className="ff-montserrat fw-900 text-white fs-lg lh-109">
                     .2 ETH
@@ -41,7 +44,7 @@ const Section4 = () => {
                   <p className="fs-xs ff-montserrat fw-normal text-white lh-109">
                     per NFT
                   </p>
-               </Col>
+                </Col>
                 <Col className="col-6">
                   <p className="ff-montserrat fw-900 text-white fs-lg lh-109 pt-4">
                     Max 9{" "}
@@ -58,7 +61,28 @@ const Section4 = () => {
                     Transaction per wallet
                   </p>
                 </Col>
-                <div className="d-flex align-items-center gap-3 mt-5 justify-content-center justify-content-lg-start">
+                <div className="d-flex align-items-center gap-3">
+                  <Button
+                    className="small-btn text-black fw-900 fs-lg lh-109 ff-montserrat pb-2"
+                    onClick={decrement}
+                  >
+                    -
+                  </Button>
+                  <div className="count-btn d-flex align-items-center justify-content-center">
+                    <p className="mx-auto text-white lh-109 text-center mb-0 fw-900  fs-lg ff-montserrat d-flex">
+                      {" "}
+                      <span id="addzero">0</span>
+                      {count}
+                    </p>
+                  </div>
+                  <Button
+                    className="small-btn text-black fw-900 fs-lg lh-109 ff-montserrat pb-2"
+                    onClick={() => setCount(count + 1)}
+                  >
+                    +
+                  </Button>
+                </div>
+                {/* <div className="d-flex align-items-center gap-3 mt-5 justify-content-center justify-content-lg-start">
                   <Button
                     onClick={decrementCount}
                     className="small-btn text-black fw-900 lh-109 ff-montserrat fs-lg"
@@ -77,16 +101,18 @@ const Section4 = () => {
                   >
                     +
                   </Button>
-                </div>
+                </div> */}
               </Row>
               <div className="mt-4">
-                <button className="mint-btn ff-SansUber fw-normal lh-109 text-nowrap fs-md text-nowrap">MINT NOW</button>
-                </div>
+                <button className="mint-btn ff-SansUber fw-normal lh-109 text-nowrap fs-md text-nowrap">
+                  MINT NOW
+                </button>
+              </div>
             </Col>
           </Row>
         </Container>
         <div className="ellpise6"></div>
-         <div className="ellpise6-yellow"></div>
+        <div className="ellpise6-yellow"></div>
       </div>
     </>
   );

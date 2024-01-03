@@ -118,7 +118,7 @@ const Cards = () => {
       lg={4}
       className="mt-3 position-relative justify-content-center d-flex"
     >
-      <Card className="gradientcard">
+      <Card className="gradientcard overflow-hidden~">
         <div className="text-center pt-4">
           {/* <img src={Utilitiescard.svg} alt="img-1" /> */}
           <span>{gradientcard.svg}</span>
@@ -131,11 +131,11 @@ const Cards = () => {
             {gradientcard.para}
           </Card.Text>
         </Card.Body>
+        <div className="d-none d-lg-block">
+          <div className="card-elipse"></div>
+          <div className="card-topellipse"></div>
+        </div>
       </Card>
-      <div className="d-none d-lg-block">
-        <div className="card-elipse"></div>
-        <div className="card-topellipse"></div>
-      </div>
     </Col>
   ));
   return (
